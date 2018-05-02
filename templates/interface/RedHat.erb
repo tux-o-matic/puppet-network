@@ -7,7 +7,9 @@ DEVICE="<%= @interface %>"
 BOOTPROTO="<%= @manage_bootproto %>"
 <% end -%>
 ONBOOT="<%= @manage_onboot %>"
+<% if @type -%>
 TYPE="<%= @type %>"
+<% end -%>
 USERCTL="<%= @userctl %>"
 PEERDNS="<%= @manage_peerdns %>"
 PEERNTP="<%= @manage_peerntp %>"
